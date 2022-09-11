@@ -1,19 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Navbar from './components/Navbar.js';
+import './components/Navbar.css';
 
 function App() {
   return (
-    <div className="main">
-      <div className="menu">
-        <ul className="list_elements">
-          <li className="list_menu">Home</li>
-          <li>About</li>
-        </ul>
+    <div className="App">
+        <Navbar/>
+        
       </div>
-      <div className="overskrift">
-        <h1>Dette er min første React side</h1>
-      </div>
-    </div>
   );
 }
 

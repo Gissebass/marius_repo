@@ -2,22 +2,6 @@
   text-align: center;
 }
 
-.overskrift  {
-  text-align: center;
-  padding:2rem;
-  margin:0rem;
-  background-color:lightgreen;
-  border-radius:5rem;
-}
-.list_elements {
-  list-style: none;
-  
-}
-
-
-
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
