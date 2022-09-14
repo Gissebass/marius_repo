@@ -17,7 +17,6 @@ const Navbar = () => {
           Kontakt
         </a>
         <div className="links" style={{ border: "none" }}>
-          <img className="navbar_plante" src="#" alt="plante"></img>
         </div>
         <a className="navbar_elements" href="#">
           Burgermeny
