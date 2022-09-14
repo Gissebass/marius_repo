@@ -1,7 +1,13 @@
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Black.ttf);
+  }
+
 .MainComponent {
     position:relative;
     width:100%;
 }
 .Main_overskrift {
     font-size:4rem;
+    font-family:nunito;
 }
