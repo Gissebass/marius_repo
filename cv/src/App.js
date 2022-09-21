@@ -1,17 +1,22 @@
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 import "./components/Navbar.css";
-import MainComponent from "./components/MainComponent.js";
-import "./components/MainComponent.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Routes from "./routes";
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    <div className="content">
-        <MainComponent />
-    </div>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+           <Routes />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

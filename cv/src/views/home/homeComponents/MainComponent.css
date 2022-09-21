@@ -1,7 +1,7 @@
 @font-face {
-    font-family: nunito;
-    src: url(../fonts/Nunito_Sans/NunitoSans-Black.ttf);
-  }
+    font-family:"nunito";
+    src:url("/src/fonts/Nunito_Sans/NunitoSans-Black.ttf")
+}
 
 .MainComponent {
     width:100%;
@@ -11,7 +11,7 @@
 }
 .mainOverskrift {
     font-size:4rem;
-    font-family:nunito;
+    font-family:"nunito";
     color:rgb(234, 221, 235);
 }
 

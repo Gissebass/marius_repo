@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+
+.ProjectsOverskrift {
+    font-size:4rem;
+    font-family: 'Nabla', cursive;
+    color:rgb(234, 221, 235);
+    font-size:8rem;
+    margin:0;
+
+}
+
+.ProjectContent {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem;
+}
