@@ -7,10 +7,11 @@
 
 .ProjectsOverskrift {
     font-size:4rem;
-    font-family: 'Nabla';
+    font-family: 'Nabla', cursive;
     color:rgb(234, 221, 235);
     font-size:8rem;
     margin:0;
+
 }
 
 .ProjectContent {
@@ -33,5 +34,14 @@
 
 .ProjectPictures {
     width:20rem;
-    margin:auto;
+    margin:auto ;
+}
+.ProjectButton {
+    width:10rem;
+    height:5rem;
+    border-radius: 3rem;
+    margin:1rem;
+    background-color:rgb(213, 167, 61);
+    border:solid black 0.1rem;
+    padding:0px;
 }
