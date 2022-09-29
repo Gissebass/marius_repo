@@ -3,7 +3,7 @@ import React from "react";
 import MainComponent from "./views/home/homeComponents/MainComponent.js";
 import Contact from "./views/Contact/Contact.js";
 import Projects from "./views/projects/Projects.js"
-import About from "./views/omMeg/omMeg"
+import About from "./views/about/About"
 
 const Routes = () => {
   return (

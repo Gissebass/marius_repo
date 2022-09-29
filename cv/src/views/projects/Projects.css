@@ -7,11 +7,10 @@
 
 .ProjectsOverskrift {
     font-size:4rem;
-    font-family: 'Nabla', cursive;
+    font-family: 'Nabla';
     color:rgb(234, 221, 235);
     font-size:8rem;
     margin:0;
-
 }
 
 .ProjectContent {

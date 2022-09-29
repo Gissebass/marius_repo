@@ -1,19 +1,43 @@
 import React from "react";
+import ProjectElement from "./ProjectElement";
 import "./Projects.css";
 
 const Projects = () => {
-  return (
 
-    <div className="ProjectMain">
-      <h1 className="ProjectsOverskrift">Projects</h1>
-      
-    <div className="ProjectContent">
-      <img className="ProjectPictures" src="#" alt="picture"></img>
-      <p className="ProjectParagraf">Dette er en test</p>
-      </div>
-      </div>
-       
-  );
-};
+  const ProjectList = [
+    {
+      Projectname: "Prosjekter",
+      imageSource: "#",
+      paragraph: "",
+      font:'Nabla'
+    },
+    {
+      Projectname: "TEST",
+      imageSource: "#",
+      paragraph: "TESTTESTTEST",
+      font:"nunito",
+    },
+    {
+      Projectname: "TEST",
+      imageSource: "#",
+      paragraph: "",
+      font:"nunito"
+    },
+  ];
+
+  const mapProjects = () => {
+    return ProjectList.map((project, index) => (
+      <ProjectElement
+        title={project.Projectname}
+        description={project.paragraph}
+        src={project.imageSource}
+        font={project.font}
+        key={index}
+      />
+    ));
+  };
+
+  return (<>{mapProjects()}</>)
+}
 
 export default Projects;
