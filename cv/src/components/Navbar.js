@@ -9,8 +9,8 @@ const Navbar = () => {
         <Link className="navbar_elements" to="./" alt="Home">
           Home
         </Link>
-        <Link className="navbar_elements" to="#" alt="About">
-          About
+        <Link className="navbar_elements" to="./omMeg" alt="omMeg" >
+          Om meg
         </Link>
         <Link className="navbar_elements" to="./Projects" alt="Prosjekter">
           Prosjekter

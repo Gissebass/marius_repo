@@ -6,7 +6,7 @@ const contact = () => {
     <>
     <h1 className='ContactOverskrift'>Kontakt</h1>
     
-    <p>Paragraf</p>
+    <p className='ContactParagraf'>Paragraf</p>
     </>
   )
 }

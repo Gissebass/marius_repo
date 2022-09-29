@@ -1,6 +1,6 @@
 import "./MainComponent.css";
 import React from 'react'
-
+import image from "../../../pictures/profile_pic.png";
 
 const MainComponent = () => {
   console.log('hajhahhsuiviuhdv')
@@ -8,7 +8,7 @@ const MainComponent = () => {
     <div className="MainComponent">
       <h1 className="mainOverskrift">Marius Gisleberg</h1>
       <div className="mainContent">
-        {/* <img className="profile_picture" src={image} alt="profilbilde"></img> */}
+        {<img className="profile_picture" src={image} alt="profilbilde"></img>}
         <div className="mainParagraph">
             <p >
           paragraph................d wajd jwj jwadj jwad jawj jw jdawj jwdj

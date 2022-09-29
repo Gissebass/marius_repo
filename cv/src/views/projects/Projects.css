@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@font-face {
+    font-family:"nunito";
+    src:url("/src/fonts/Nunito_Sans/NunitoSans-Black.ttf")
+}
 
 
 .ProjectsOverskrift {
@@ -13,7 +17,22 @@
 .ProjectContent {
     width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin:2rem;
+    justify-content: center;
+    
+}
+
+
+.ProjectParagraf {
+    font-size:1.5rem;
+    font-family:"nunito";
+    color:rgb(234, 221, 235);
+    margin:auto;
+    
+}
+
+.ProjectPictures {
+    width:20rem;
+    margin:auto;
 }
