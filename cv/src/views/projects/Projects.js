@@ -1,68 +1,58 @@
 import React from "react";
 import ProjectElement from "./ProjectElement";
 import "./Projects.css";
-import {useState} from "react";
+import { useState } from "react";
 
 const Projects = () => {
-
   const ProjectList = [
     {
       Projectname: "Prosjekter",
       imageSource: "#",
       paragraph: "Forside",
-      font:"nabla"
-      
+      font: "nabla",
     },
     {
       Projectname: "TEST",
       imageSource: "#",
       paragraph: "TESTTESTTEST",
-      font:"nabla",
+      font: "nabla",
     },
     {
       Projectname: "TEST",
       imageSource: "#",
       paragraph: "TEST3",
-      font:"nunito"
+      font: "nunito",
     },
   ];
-    
-  
-let i = 0;
+
   const mapProjects = () => {
-    const [ProjectState, setProjectState] = useState(i);
+    const [ProjectState, setProjectState] = useState(0);
     const handleClick = (e) => {
-      if (i < ProjectList.length) {
-        console.log(ProjectList.length,"Lengde")
-        i++;
-        console.log(i,"i")
-        setProjectState(i)
-      } else if (i === ProjectList.length) {
-        i = 0
-        console.log(i,"TEST")
-        setProjectState(i)
-      }else {
-        console.log("ERROR")
+      if (ProjectState < ProjectList.length - 1) {
+        console.log(ProjectList.length, "Lengde");
+        setProjectState(ProjectState + 1);
+      } else if (ProjectState === ProjectList.length - 1) {
+        setProjectState(0);
+      } else {
+        console.log("ERROR");
       }
-    }
+    };
     return (
       <>
-      <button className="ProjectButton" onClick={(e)=>handleClick(e)} >TEST</button>
-      <ProjectElement
-        title={ProjectList[ProjectState].Projectname}
-        description={ProjectList[ProjectState].paragraph}
-        src={ProjectList[ProjectState].imageSource}
-        font={ProjectList[ProjectState].font}
-      />
+        <button className="ProjectButton" onClick={(e) => handleClick(e)}>
+          TEST
+        </button>
+        <ProjectElement
+          title={ProjectList[ProjectState].Projectname}
+          description={ProjectList[ProjectState].paragraph}
+          src={ProjectList[ProjectState].imageSource}
+          font={ProjectList[ProjectState].font}
+        />
       </>
-    )
-    
+    );
   };
 
-  return (<>{mapProjects()}</>)
-}
+  return <>{mapProjects()}</>;
+};
 
 export default Projects;
-
-
-
