@@ -29,12 +29,11 @@ const Projects = () => {
     const [ProjectState, setProjectState] = useState(0);
     const handleClick = (e) => {
       if (ProjectState < ProjectList.length - 1) {
-        console.log(ProjectList.length, "Lengde");
         setProjectState(ProjectState + 1);
       } else if (ProjectState === ProjectList.length - 1) {
         setProjectState(0);
       } else {
-        console.log("ERROR");
+        console.log("ERROR Usestate project");
       }
     };
     return (
