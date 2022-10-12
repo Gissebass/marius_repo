@@ -2,6 +2,7 @@ import React from "react";
 import ProjectElement from "./ProjectElement";
 import "./Projects.css";
 import { useState } from "react";
+import Chucknorris from "./projectComponent.js/Bilder";
 
 const Projects = () => {
   const ProjectList = [
@@ -12,9 +13,9 @@ const Projects = () => {
       font: "nabla",
     },
     {
-      Projectname: "TEST",
-      imageSource: "#",
-      paragraph: "TESTTESTTEST",
+      Projectname: "BildeAPI",
+      imageSource: "https://picsum.photos/200",
+      paragraph: <Chucknorris/>,
       font: "nabla",
     },
     {
