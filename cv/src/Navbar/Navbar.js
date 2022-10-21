@@ -1,29 +1,14 @@
-import "./Navbar.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import "./Navbar.css";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="links">
-        <Link className="navbar_elements" to="./" alt="Home">
-          Home
-        </Link>
-        <Link className="navbar_elements" to="./omMeg" alt="omMeg">
-          Om meg
-        </Link>
-        <Link className="navbar_elements" to="./Projects" alt="Prosjekter">
-          Prosjekter
-        </Link>
-        <Link className="navbar_elements" to="./contact" alt="Kontakt">
-          Kontakt
-        </Link>
-        <div className="links" style={{ border: "none" }}></div>
-        <Link className="navbar_elements" style={{ margin: "3rem" }} to="#">
-          Burgermeny
-        </Link>
-      </div>
-    </nav>
+    <div classname="navbar_elements">
+      <MobileNavigation />
+      <Navigation />
+    </div>
   );
 };
 

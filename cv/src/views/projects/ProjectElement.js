@@ -1,5 +1,4 @@
 import React from "react";
-import Bilder from "./projectComponent.js/Bilder";
 
 const ProjectElement = ({ title, description, src, font, index }) => {
   return (

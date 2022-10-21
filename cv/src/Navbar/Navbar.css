@@ -22,3 +22,14 @@
     color:rgb(233, 227, 233);
 
 }
+
+@media (max-width:900px) {
+    .navbar_elements {
+        display:flex;
+        justify-content: center center;
+        width:100%;
+        height:auto;
+
+    }
+
+}

@@ -2,7 +2,7 @@ import React from "react";
 import ProjectElement from "./ProjectElement";
 import "./Projects.css";
 import { useState } from "react";
-import Chucknorris from "./projectComponent.js/Bilder";
+import Chucknorris from "./projectComponent.js/quote";
 
 const Projects = () => {
   const ProjectList = [
@@ -15,7 +15,7 @@ const Projects = () => {
     {
       Projectname: "BildeAPI",
       imageSource: "https://picsum.photos/200",
-      paragraph: <Chucknorris/>,
+      paragraph: <Chucknorris />,
       font: "nabla",
     },
     {
@@ -40,7 +40,7 @@ const Projects = () => {
     return (
       <>
         <button className="ProjectButton" onClick={(e) => handleClick(e)}>
-          TEST
+          Neste side
         </button>
         <ProjectElement
           title={ProjectList[ProjectState].Projectname}
