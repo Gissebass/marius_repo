@@ -11,7 +11,8 @@
     width:100%;
     height:3rem;
     padding:1rem;
-    background-color: #121226
+    background-color: #121226;
+    list-style-type:none;
 }
 .navbar_elements {
     text-decoration:none;
@@ -23,13 +24,17 @@
 
 }
 
+.navbar_mobile {
+    display:none;
+    justify-content: center center;
+
+}
+
 @media (max-width:900px) {
     .navbar_elements {
-        display:flex;
-        justify-content: center center;
-        width:100%;
-        height:auto;
-
+        display:none
     }
-
+    .navbar_mobile{
+        display:flex;
+    }
 }
