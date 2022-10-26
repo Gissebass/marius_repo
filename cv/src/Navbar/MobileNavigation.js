@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Navlinks from "./Navlinks";
 
-export const MobileNavigation = () => {
+const MobileNavigation = () => {
   return (
     <nav className="navbar_mobil">
       <Navlinks />

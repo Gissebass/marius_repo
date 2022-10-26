@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 const Navbar = () => {
   return (
-    <div classname="navbar_elements">
+    <div>
       <MobileNavigation />
       <Navigation />
     </div>

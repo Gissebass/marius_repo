@@ -3,7 +3,6 @@ import React from 'react'
 import image from "../../../pictures/profile_pic.png";
 
 const MainComponent = () => {
-  console.log('hajhahhsuiviuhdv')
   return (
     <div className="MainComponent">
       <h1 className="mainOverskrift">Marius Gisleberg</h1>
