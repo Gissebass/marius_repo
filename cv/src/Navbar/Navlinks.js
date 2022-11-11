@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarElements from "./NavbarElements";
 import { AiOutlineMenu } from "react-icons/ai";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const Navlinks = () => {
   const links = [
@@ -25,8 +25,8 @@ const Navlinks = () => {
   return (
     <nav>
       <ul className="links">
-        {links.map(({ link, label, index }) => (
-          <NavbarElements link={link} label={label} index={index} />
+        {links.map(({ obj, index }) => (
+          <NavbarElements link={obj.link} label={obj.label} key={index} />
         ))}
         <li className="navbar_elements" to="#">
           <AiOutlineMenu style={{ fontSize: "2rem" }} />
