@@ -1,7 +1,7 @@
 import React from "react";
-import NavbarElements from "./NavbarElements";
 import { AiOutlineMenu } from "react-icons/ai";
-import "./Navbar.css"
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navlinks = () => {
   const links = [
@@ -25,8 +25,10 @@ const Navlinks = () => {
   return (
     <nav>
       <ul className="links">
-        {links.map(({ link, label, index }) => (
-          <NavbarElements link={link} label={label} index={index} />
+        {links.map((links, index) => (
+          <Link to={links.link} alt={links.label} key ={index}>
+            {links.label}
+          </Link>
         ))}
         <li className="navbar_elements" to="#">
           <AiOutlineMenu style={{ fontSize: "2rem" }} />
