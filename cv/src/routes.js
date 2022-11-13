@@ -1,27 +1,18 @@
-import { BrowserRouter as Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
 import MainComponent from "./views/home/homeComponents/MainComponent.js";
 import Contact from "./views/Contact/Contact.js";
-import Projects from "./views/projects/Projects.js"
-import About from "./views/about/About"
-
-const Routes = () => {
+import Projects from "./views/projects/Projects.js";
+import About from "./views/about/About";
+const AppRoutes = () => {
   return (
-    <>
-      <Route exact path="/">
-        <MainComponent />
-      </Route>
-      <Route exact path="/Contact">
-        <Contact />
-      </Route>
-      <Route exact path="/Projects">
-        <Projects />
-      </Route>
-      <Route exact path="/omMeg">
-        <About/>
-      </Route>
-    </>
+      <Routes>
+        <Route path="/" element={<MainComponent />} />
+        <Route path="/Contact" index element={<Contact />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/omMeg" element={<About />} />
+      </Routes>
   );
 };
 
-export default Routes;
+export default AppRoutes;

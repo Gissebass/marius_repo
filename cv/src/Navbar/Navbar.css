@@ -26,22 +26,7 @@
 
 }
 
-.navbar_mobil {
-    display:none;
-    justify-content: center center;
-}
-
 @media (max-width:900px) {
     .navbar_elements {
         display:none;
-    }
-    .navbar_mobil{
-        display:flex;
-        text-decoration:none;
-        font-size:150%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin: 1rem;
-        padding:1rem;
-        color:rgb(233, 227, 233);
-    }
-}
+    }}

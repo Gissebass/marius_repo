@@ -1,13 +1,11 @@
 import React from "react";
 import "./Navbar.css";
-import MobileNavigation from "./MobileNavigation";
-import Navigation from "./Navigation";
+import Navlinks from "./Navlinks";
 
 const Navbar = () => {
   return (
     <div>
-      <MobileNavigation />
-      <Navigation />
+      <Navlinks/>
     </div>
   );
 };
