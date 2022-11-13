@@ -26,7 +26,7 @@ const Navlinks = () => {
     <nav>
       <ul className="links">
         {links.map((links, index) => (
-          <Link to={links.link} alt={links.label} key ={index}>
+          <Link className ="navbar_elements" to={links.link} alt={links.label} key ={index}>
             {links.label}
           </Link>
         ))}
