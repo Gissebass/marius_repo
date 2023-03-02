@@ -23,10 +23,21 @@
     margin: 1rem;
     padding:1rem;
     color:rgb(233, 227, 233);
+}
 
+.navbar_progressbar {
+    transition: width 2s;
+    position:relative;
+    margin:1rem;
+    padding:1rem;
+    background-color:rgb(213, 167, 61);
+    height:70%;
+    border-radius: 3rem;
+    min-width:15%;
 }
 
 @media (max-width:900px) {
     .navbar_elements {
         display:none;
     }}
+    

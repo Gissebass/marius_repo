@@ -3,6 +3,9 @@ import ProjectElement from "./ProjectElement";
 import "./Projects.css";
 import { useState } from "react";
 import Chucknorris from "./projectComponent.js/quote";
+import GridProp from "./ProjectViews/GridProp.js";
+
+const SpecialProjectNames = ["GridProp"];
 
 const Projects = () => {
   const ProjectList = [
@@ -24,6 +27,12 @@ const Projects = () => {
       paragraph: "TEST3",
       font: "nunito",
     },
+    {
+      Projectname: "GridProp",
+      label: "GRID GIRD GIRD",
+      paragraph: "Dette er en test",
+      font: "nunito",
+    },
   ];
 
   const mapProjects = () => {
@@ -37,21 +46,36 @@ const Projects = () => {
         console.log("ERROR Usestate project");
       }
     };
-    return (
-      <>
-        <button className="ProjectButton" onClick={(e) => handleClick(e)}>
-          Neste side
-        </button>
-        <ProjectElement
-          title={ProjectList[ProjectState].Projectname}
-          description={ProjectList[ProjectState].paragraph}
-          src={ProjectList[ProjectState].imageSource}
-          font={ProjectList[ProjectState].font}
-        />
-      </>
+    console.log(
+      SpecialProjectNames.includes(ProjectList[ProjectState].ProjectName)
     );
-  };
+    console.log("TEST", ProjectList[ProjectState].Projectname);
 
+    if (SpecialProjectNames.includes(ProjectList[ProjectState].ProjectName)) {
+      //Fiks opp i if statement pls
+      return (
+        <GridProp
+          paragraph={ProjectList[ProjectState].paragraph}
+          label={ProjectList[ProjectState].label}
+        ></GridProp>
+      );
+    } else {
+      return (
+        <>
+          <button className="ProjectButton" onClick={(e) => handleClick(e)}>
+            Neste side
+          </button>
+          <ProjectElement
+            title={ProjectList[ProjectState].Projectname}
+            description={ProjectList[ProjectState].paragraph}
+            src={ProjectList[ProjectState].imageSource}
+            font={ProjectList[ProjectState].font}
+          />
+        </>
+      );
+    }
+  };
+  
   return <>{mapProjects()}</>;
 };
 

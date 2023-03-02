@@ -8,3 +8,10 @@
     font-family:"nunito";
     color:rgb(234, 221, 235);
 }
+
+p {
+    font-family: "nunito";
+    color:rgb(234, 221, 235);
+    font-size:1.5rem;
+    
+}

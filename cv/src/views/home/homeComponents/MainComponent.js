@@ -1,5 +1,5 @@
 import "./MainComponent.css";
-import React from 'react'
+import React from "react";
 import image from "../../../pictures/profile_pic.png";
 
 const MainComponent = () => {
@@ -9,14 +9,14 @@ const MainComponent = () => {
       <div className="mainContent">
         {<img className="profile_picture" src={image} alt="profilbilde"></img>}
         <div className="mainParagraph">
-            <p >
-          paragraph................d wajd jwj jwadj jwad jawj jw jdawj jwdj
-          wdjawd jjowtto3jtgjslgssenlglegmnsegllsgelnsgelgnleslnelngesl nglne
-          snlg selnselnlnegslnsegln neaf lnsegl l</p>
+          <p>
+            Hi! My name is Marius and i´m a student, studying computer science
+            at the Norwegian institute of technology. in my freetime i often
+            like to try a new restaurant in town or get in some exercise.
+          </p>
         </div>
       </div>
     </div>
   );
 };
-
 export default MainComponent;
